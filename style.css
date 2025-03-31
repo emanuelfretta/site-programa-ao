@@ -1,6 +1,6 @@
 /* Mantendo fundo verde-limão */
 body {
-  background-color: chartreuse;
+  background-color: rgb(145, 250, 141);
   font-family: Arial, sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 .card, .card2 {
   width: 200px;
   height: 300px;
-  background-color: rgb(137, 255, 41);
+  background-color: rgb(126, 253, 153);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,9 +42,9 @@ body {
 }
 
 /* Botões dentro dos cards */
-.card a, .card2 a {
+.card a, .card2 a, .card3 a{
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #5cb14b;
   color: white;
   padding: 8px 8px;
   border-radius: 6px;
@@ -53,5 +53,44 @@ body {
 }
 
 .card a:hover, .card2 a:hover {
-  background-color: #0056b3;
+  background-color: #1e531d;
 }
+
+.container-fluid{
+  background-color: rgb(146, 255, 155);
+}
+/* Rodapé ocupa toda a largura da página */
+.footer {
+  background-color: #233523; /* Verde-limão */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Mantém o rodapé abaixo do conteúdo */
+  bottom: 0;
+  left: 0;
+}
+
+/* Para garantir que o conteúdo não ultrapasse o rodapé */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh; /* Faz a página ocupar a altura total da tela */
+}
+
+.content {
+  flex-grow: 1;
+}
+
+/* Links do rodapé */
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
