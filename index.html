@@ -10,37 +10,83 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </div>
-          </div>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./logo.png"
+      <a class="navbar-brand" href="#">MundoBiologia.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Apostilas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Exercícios</a></li>
+                <li><a class="dropdown-item" href="#">Vestibular</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Simulados</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="O que você esta procurando?" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Procurar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            foto
-            <div class="ecossistema">
-                <img class="imgorganize" src="ORGANISMO.webp" alt="">
+            
+            
+           <img src="organismo.png" class="img-fluid" style="width: 400px;" alt="imagem">
+              <div class="ecossistema"></div>
+               <p class="texto">A ecologia é a ciência que estuda as interações entre os seres vivos e o ambiente em que vivem. Ela analisa como os organismos (como plantas, animais, fungos, bactérias, etc.) se relacionam entre si e com os componentes abióticos (não vivos) do ambiente, como o ar, a água, o solo e o clima. A ecologia ajuda a entender os processos naturais que sustentam a vida na Terra, como os ciclos de nutrientes, a cadeia alimentar, a polinização e os impactos das atividades humanas no meio ambiente. 
+
+                Essa área de estudo também abrange a conservação de ecossistemas e biodiversidade, sendo fundamental para lidar com questões como o aquecimento global, a perda de espécies e a degradação dos habitats naturais.</p>
             </div>
          </div>
-          <div class="col1">
-    
-            <p>A Ecologia é a ciência que estuda a interação entre os seres vivos e o ambiente em que vivem. para compreender
-                o funcionamento da natureza, ela envolve o estudos como evolução, genética, citologia, anatomia e fisiologia.
-                
-                </p>
+          <div class="col1">    
           </div>
           <div class="col">
+            
+          </div>
+            <div class="card-container">
+              <div class="card-container">
+                <div class="card">
+                    <img src="organizaçao.png" class="card1" alt="Cartão 1">
+                    <h5 class="card-title">Ecossistemas</h5>
+                    <p>Organização dos ecossistemas.</p>
+                    <a href="#">Leia mais</a>
+                </div>
+            
+                <div class="card2">
+                    <img src="organizaçao.png" class="card3" alt="Cartão 2">
+                    <h5 class="card-title1">Biodiversidade</h5>
+                    <p>Descubra a importância da biodiversidade.</p>
+                    <a href="#">Leia mais</a>
+                </div>
+            </div>
+            
+    
+
 </body>
 </html>
