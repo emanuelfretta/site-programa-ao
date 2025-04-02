@@ -93,3 +93,99 @@ body {
   text-decoration: underline;
 }
 
+
+
+.card-link {  /*faz os cards irem para outra pagina
+
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Mantém a cor padrão do texto */
+}
+
+.card-link .card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-link .card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+/* Remove a aparência padrão dos links */
+.card-link {
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Mantém a cor do texto original */
+  display: inline-block;
+}
+
+/* Estiliza os cards */
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(126, 253, 153);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajusta as imagens */
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Personaliza o título */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2a3d2f; /* Verde escuro */
+}
+
+/* Personaliza o texto */
+.card p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Personaliza os links dentro dos cards */
+.card a {
+  background-color: #5cb14b; /* Verde */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse no botão */
+.card a:hover {
+  background-color: #1e531d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .card {
+      width: 90%;
+  }
+}
